@@ -1,0 +1,69 @@
+1) Cual es la diferencia entre let, var y const?
+la diferencia es el alcance de esa variable. Las declaraciones var tienen un ámbito global , mientras que let y const tienen un ámbito local(donde fue declarada).
+Las variables var pueden ser modificadas y re-declaradas dentro de su ámbito; las variables let pueden ser modificadas, pero no re-declaradas; las variables const no pueden ser modificadas ni re-declaradas.
+
+2) como detectar el tipo de dato de una variable?
+.typeOf()
+
+3) Estructura de controles mas tipicos?
+Las estructuras de bucles en Javascript son: /for /while /do-while /forEach
+condicionales: /if /else /switch
+
+4) que es un template string?
+es una cadena de texto en la cual puedo poner varias strings, y ademas puedo con ${poner codigo js} sin usar el +
+
+5) que es una funcion de callback?
+A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function
+
+6) que es un array multidimensional?
+un array que contiene varios arrays. 
+
+7)Cual es la diferencia entre for...in, for...of y forEach
+1) for...in: es usada para iterar por todas las propiedades enumerables de un objeto. Puede ser usado en arrays, strings, objets pero no con Map
+2) for...of: ejecuta un bloque de código para cada elemento de un objeto iterable, como lo son: String, Array, objetos. Map esta ok.
+3) forEach: es un metodo de array, que permite iterar sobre el elemnto de un array. solo itera sobre arrays.
+
+8) como contar los elementos de un array?
+nombreArray.lenght
+
+9) Cual es la diferencia entre DOM y BOM?
+Dom hace referencia a document object model que son todos los elementos que hace a nuestra pagina
+Bom es broswer object model hace referencia a elementos y funcionalidades del navegador
+
+10) Que es JavaScript?
+- ha sido un lenguaje interpretado
+- son archivos de texto que se integra directamente en las páginas HTML y es interpretado (sin estar compilado) por el cliente (navegador)
+- es gestionado por ECMAScript, una organización sin ánimo de lucro
+- se depura en una fase
+
+11) tipos de datos en Js?
+Los tipos de datos JavaScript son: String, booleano, Objeto, number, undefined.
+
+12) Es posible dividir el código JavaScript en varias líneas?
+Si, haciendo una declaracion string con el uso de una barra invertida (slash), '\', al terminar la primera línea
+
+13) Qué significa la palabra clave 'this' en JavaScript?
+ palabra clave 'this' se refiere al objeto desde donde fue llamado
+
+14) Explique el funcionamiento de los temporizadores en JavaScript y las desventajas de usarlos, si las hay.
+Los temporizadores se usan para ejecutar un fragmento de código en un momento determinado o para repetir el código en un espacio de tiempo señalado. Esto se hace utilizando las funciones setTimeout, setInterval y clearInterval,
+
+La función setTimeout (function, delay), es una funcion que se usa para iniciar un temporizador que llama a una funcion luego del retardo especificado. La función setInterval (function, delay) es utilizada para ejecutar repetidamente una función el el retardo (delay) que se especifique y solo se detiene cuando se cancela. La función clearInterval(id) es la que señala  al temporizador que se pare.
+
+Los temporizadores funcionan dentro de un hilo único, debido a esto,  los eventos pueden quedar 'en cola', a la espera de ser ejecutados.
+
+15) Qué es el operador ===?
+El operador (===) es llamado operador de igualdad estricta, el cual arroja verdadero (true) cuando los dos operandos poseen el mismo valor sin ningún tipo de conversión.
+
+16) Cómo se puede convertir un string de cualquier base a un entero en JavaScript?
+ través del uso de la función parseInt(), ya que, esta función toma el string a convertir como primer parámetro, y como segundo parámetro usa la base del string dado
+
+17) Explica la diferencia entre '==' y '===='
+La diferencia es que ("==") chequea solamente la igualdad de valor, pero ("====") es la prueba de igualdad más estricta y además, devuelve falso si el tipo o el valor de las dos variables es distinto.
+
+18) Formas de acceder al dom?
+getElementById()
+getElementByClassName()
+getElementByTagName()
+querySelector()
+querySelectorAll()

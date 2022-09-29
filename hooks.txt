@@ -1,0 +1,27 @@
+useRef
+es un hoook que nos sirve para  manejar el valor de una variable pero que no dispara la renderizacion del estado.
+
+   const ref = useRef()
+    console.log(ref);
+
+La idea es que mantenemos una referencia y cuando esa ref cambia no se renderiza esa parte del componente
+
+useLayoutEffect - > es parecido al useEffect pero se dispara de manera sincrona
+
+useCallback-> sirve mas para guardar funciones y objetos en la memorias
+
+
+useReducer  -> sirve para saber donde estan las acciones de mi aplicacion.
+Es una funcion comun y corriente
+NO debe realizar tareas asincrona.
+Debe de ser una funcion pura -> No debe tener efectos secundarios sin necesidad de llamar a otras funcinoes.
+Debe retornar un nuevo estado
+recibe dos argumentos (estado inicial y accion a ejecutar)
+No debe llamar al localStorage 
+
+Funcionamiento. (ejempolo una app todo)
+1) tiene un estado inicial. (1 lista de tarea)
+2) se muestra el estado en la pantalla del cliente
+3) se crea una accion de agregar un elemento a la lista. (esta accion del cliente genera un )\
+4) cambio del estado inicial del reducer. (punto 1-> por ej; agregar, borrar, actualizar la todo)
+En teoria segun entiendo es lo que maneja los estados de la aplicacion, los cambios
