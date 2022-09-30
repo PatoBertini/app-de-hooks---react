@@ -1,6 +1,6 @@
 # App de hooks de react 
 
-El fin de esta aplicacion es solamente de practica y aprendisaje. Se utilizaron los siguientes hooks de React: 
+El fin de esta aplicacion es solamente de practica y aprendizaje. Se utilizaron los siguientes hooks de React: 
 
 
 ```
